@@ -1,0 +1,524 @@
+
+nav {
+  background-color: #BFA181; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 15px 20px 15px 3px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+nav a {
+  color: #ebebeb;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s; 
+}
+nav a:hover {
+  color: #0A1828;
+}
+
+.container {
+  padding-top: 70px; 
+}
+
+body, html {
+  font-family: 'Proxima Nova', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; 
+
+  overflow-x: hidden;
+}
+/* Navigation styling */
+nav, .content, .about-section, .experience-section, .experience-details h3, .experience-date, .experience-description {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+/* Normal weight for regular text */
+.about-content p, .experience-description {
+  font-weight: normal;
+}
+
+/* Bold for titles */
+.intro-big, .intro-name, .about-section h2, .experience-section h2, .experience-details h3 {
+  font-weight: bold;
+}
+
+/* Light for subtle text */
+.experience-date {
+  font-weight: 300;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #0A1828;
+  z-index: -1; 
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15%;
+  position: relative;
+  z-index: 10;
+}
+
+.content {
+  text-align: left;
+  color: #ebebeb;
+}
+
+/* Styles for "Hi," text */
+.intro-big {
+  font-size: 3rem; 
+  color: #ebebeb; 
+  margin-bottom: 20px;
+}
+
+/* Styles for "I'm Emine Betül Erdoğan" text */
+.intro-name {
+  font-size: 3rem;
+  color: #ebebeb;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+/* Styles for "A Passionate Computer Engineer" text */
+.intro-typewriter {
+  font-size: 2rem; 
+  color: #ebebeb;
+  margin: 10px 0;
+  overflow: hidden; 
+  white-space: nowrap;
+  border-right: 0.15em solid #BFA181; 
+  animation: typing 3s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+  animation-delay: 3s; 
+  margin-bottom: 30px;
+}
+
+/* Keyframes for typing animation with color change for the last letter */
+@keyframes typing {
+  0% {
+      width: 0;
+      color: #ebebeb;
+  }
+  99% {
+      width: 100%;
+      color: #ebebeb; 
+  }
+  100% {
+      width: 100%;
+      color: #637180; /* Change color of the last letter to #637180 */
+  }
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+.contact-button {
+  display: inline-block;
+  background-color: #BFA181;
+  color: #ebebeb;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #162c42; 
+}
+.profile-image {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+
+
+.about-section {
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+  background-color: #0A1828;
+  color: #ebebeb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px; /* Increased gap between image and text */
+  max-width: 1000px;
+  margin: auto;
+  margin-right: 15%; /* Aligns text to be more under the "About" title */
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  color: #BFA181;
+  text-align: right;
+  margin-right: 15%;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  margin-top: 18%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.text-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between paragraphs */
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  color: #ebebeb;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Professional Experience Section Styles */
+.experience-section {
+  background-color: #0A1828;
+  color: #ebebeb;
+  min-height: 100vh;
+  padding: 50px 80px;
+}
+
+.experience-section h2 {
+  font-size: 3rem;
+  color: #BFA181;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+  background-color: #0A1828;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.experience-item:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  background-color: #0a182879; /* Darken the background on hover */
+}
+
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.experience-details h3 {
+  font-size: 1.5rem;
+  color: #ebebeb;
+  margin: 0;
+}
+
+.experience-date {
+  font-size: 1rem;
+  color: #aaaaaa;
+}
+
+.experience-description {
+  font-size: 1.1rem;
+  color: #ebebeb;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/proximanova_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/proximanova_bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/proximanova_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/proximanova_black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Volunteer Experience Section Styles */
+.volunteer-section {
+  background-color: #0A1828;
+  color: #ebebeb;
+  min-height: 100vh;
+  padding: 50px 80px;
+}
+
+.volunteer-section h2 {
+  font-size: 3rem;
+  color: #BFA181;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.volunteer-section .experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.volunteer-section .experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 10px;
+  background-color: #0A1828;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for volunteer items */
+.volunteer-section .experience-item:hover {
+  transform: scale(1.05);
+  background-color: #0a182879;
+}
+
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.experience-details h3 {
+  font-size: 1.5rem;
+  color: #ebebeb;
+  margin: 0;
+}
+
+.experience-date {
+  font-size: 1rem;
+  color: #aaaaaa;
+}
+
+.experience-description {
+  font-size: 1.1rem;
+  color: #ebebeb;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+.projects-section {
+  
+  background-color: #0A1828; /* Dark background to differentiate */
+  color: #ebebeb;
+  padding: 60px 80px;
+}
+
+.projects-section h2 {
+  font-size: 3rem;
+  color: #BFA181;
+  text-align: right;
+  margin-bottom: 50px;
+  margin-right: 4%;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for larger display */
+  gap: 20px;
+  padding: 50px;
+}
+
+.three-d-card {
+  position: relative;
+  width: 100%; /* Make the cards take full width in the grid */
+  height: 300px; /* Increase height for a larger display */
+  perspective: 1000px;
+}
+
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.three-d-card:hover .card-wrapper {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-face.front {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-face.back {
+  transform: rotateY(180deg);
+  background-color: #0A1828;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-content {
+  color: #ebebeb;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #BFA181;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card-tech {
+  font-size: 1rem;
+  color: #BFA181;
+}
+/* Footer Section */
+.footer-section {
+  background-color: #BFA181;
+  color: #333;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.social-links {
+  display: flex;
+  position: absolute;
+  left: 0%; /* Align social links to the left with 15% margin */
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: #BFA181;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+#linkedin svg {
+  fill: #ebebeb;
+}
+
+#github svg {
+  fill: #ebebeb;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #ebebeb;
+  margin: auto; /* Center the text */
+}
