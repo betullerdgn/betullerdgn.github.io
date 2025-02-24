@@ -32,7 +32,7 @@ body, html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth; 
-
+  
   overflow-x: hidden;
 }
 /* Navigation styling */
@@ -157,10 +157,10 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 
 .about-section {
-  background-size: 60px 60px;
+  background-size: 80px 80px;
   background-position: -5px -5px;
   background-color: #0A1828;
-  color: #ebebeb;
+  color: #0A1828;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -368,6 +368,9 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   margin-right: 4%;
 }
 
+.projects-section .projects-title{
+  text-align: left;
+}
 
 .projects-grid {
   display: grid;
@@ -453,7 +456,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .footer-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   display: flex;
   align-items: center;
   position: relative;
@@ -521,4 +524,67 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   font-size: 1rem;
   color: #ebebeb;
   margin: auto; /* Center the text */
+}
+.blogs-section {
+  background-color: #0A1828;
+  color: #ebebeb;
+  min-height: 100vh;
+  padding: 50px 80px;
+}
+
+.blogs-section h2 {
+  font-size: 3rem;
+  color: #BFA181;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  text-align: right;
+}
+
+.blogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px;
+  background-color: #0A1828;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: scale(1.05);
+}
+
+.blog-image {
+  margin-top: 18px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  color: #ebebeb;
+}
+
+.blog-content h3 a {
+  text-decoration: none;
+  color: #BFA181;
+}
+
+.blog-content h3 a:hover {
+  text-decoration: underline;
+  text-align: justify;
+  
+}
+
+.blog-content p {
+  font-size: 1.1rem;
+  color: #ebebeb;
 }
