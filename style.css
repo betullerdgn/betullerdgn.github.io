@@ -1,6 +1,6 @@
 
 nav {
-  background-color: #BFA181; 
+  background-color: #424242; 
   position: fixed;
   top: 0;
   width: 100%;
@@ -8,11 +8,11 @@ nav {
   justify-content: right;
   padding: 15px 20px 15px 3px;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.062); 
 }
 
 nav a {
-  color: #ebebeb;
+  color: #fafafa;
   text-decoration: none;
   margin: 0 15px;
   font-size: 1rem;
@@ -20,7 +20,7 @@ nav a {
   transition: color 0.3s; 
 }
 nav a:hover {
-  color: #0A1828;
+  color: #292929;
 }
 
 .container {
@@ -61,7 +61,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #0A1828;
+  background-color: #424242;
   z-index: -1; 
 }
 
@@ -70,27 +70,27 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15%;
+  padding: 12%;
   position: relative;
   z-index: 10;
 }
 
 .content {
   text-align: left;
-  color: #ebebeb;
+  color: #fafafa;
 }
 
 /* Styles for "Hi," text */
 .intro-big {
   font-size: 3rem; 
-  color: #ebebeb; 
+  color: #fafafa; 
   margin-bottom: 20px;
 }
 
 /* Styles for "I'm Emine Betül Erdoğan" text */
 .intro-name {
   font-size: 3rem;
-  color: #ebebeb;
+  color: #fafafa;
   margin: 10px 0;
   margin-bottom: 10px;
 }
@@ -98,11 +98,11 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 /* Styles for "A Passionate Computer Engineer" text */
 .intro-typewriter {
   font-size: 2rem; 
-  color: #ebebeb;
+  color: #fafafa;
   margin: 10px 0;
   overflow: hidden; 
   white-space: nowrap;
-  border-right: 0.15em solid #BFA181; 
+  border-right: 0.15em solid #fafafa; 
   animation: typing 3s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
   animation-delay: 3s; 
   margin-bottom: 30px;
@@ -112,11 +112,11 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 @keyframes typing {
   0% {
       width: 0;
-      color: #ebebeb;
+      color: #fafafa;
   }
   99% {
       width: 100%;
-      color: #ebebeb; 
+      color: #fafafa; 
   }
   100% {
       width: 100%;
@@ -134,8 +134,8 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .contact-button {
   display: inline-block;
-  background-color: #BFA181;
-  color: #ebebeb;
+  background-color: #292929;
+  color: #fafafa;
   text-align: center;
   padding: 10px 20px;
   font-size: 1rem;
@@ -147,10 +147,11 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 }
 
 .contact-button:hover {
-  background-color: #162c42; 
+  background-color: #424242; 
 }
 .profile-image {
-  max-width: 200px;
+  max-width: 250px;
+  height: 450px;
   border-radius: 10px;
 }
 
@@ -159,8 +160,8 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 .about-section {
   background-size: 80px 80px;
   background-position: -5px -5px;
-  background-color: #0A1828;
-  color: #0A1828;
+  background-color: #424242;
+  color: #424242;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -179,7 +180,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .about-section h2 {
   font-size: 3rem;
-  color: #BFA181;
+  color: #fafafa;
   text-align: right;
   margin-right: 15%;
   margin-bottom: 20px;
@@ -200,22 +201,22 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .text-content p {
   font-size: 1.1rem;
-  color: #ebebeb;
+  color: #fafafa;
   line-height: 1.6;
   text-align: justify;
 }
 
 /* Professional Experience Section Styles */
 .experience-section {
-  background-color: #0A1828;
-  color: #ebebeb;
+  background-color: #424242;
+  color: #fafafa;
   min-height: 100vh;
   padding: 50px 80px;
 }
 
 .experience-section h2 {
   font-size: 3rem;
-  color: #BFA181;
+  color: #fafafa;
   margin-bottom: 80px;
   text-align: left;
 }
@@ -231,7 +232,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   align-items: flex-start;
   gap: 20px;
   padding: 10px;
-  background-color: #0A1828;
+  background-color: #424242;
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -239,7 +240,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 /* Hover effect */
 .experience-item:hover {
   transform: scale(1.05); /* Slightly increase size */
-  background-color: #0a182879; /* Darken the background on hover */
+  background-color: #424242; /* Darken the background on hover */
 }
 
 .experience-logo {
@@ -250,18 +251,18 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .experience-details h3 {
   font-size: 1.5rem;
-  color: #ebebeb;
+  color: #fafafa;
   margin: 0;
 }
 
 .experience-date {
   font-size: 1rem;
-  color: #aaaaaa;
+  color: #686868;
 }
 
 .experience-description {
   font-size: 1.1rem;
-  color: #ebebeb;
+  color: #fafafa;
   line-height: 1.6;
   margin-top: 5px;
 }
@@ -295,15 +296,15 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 /* Volunteer Experience Section Styles */
 .volunteer-section {
-  background-color: #0A1828;
-  color: #ebebeb;
+  background-color: #424242;
+  color: #fafafa;
   min-height: 100vh;
   padding: 50px 80px;
 }
 
 .volunteer-section h2 {
   font-size: 3rem;
-  color: #BFA181;
+  color: #fafafa;
   margin-bottom: 80px;
   text-align: left;
 }
@@ -319,7 +320,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   align-items: flex-start;
   gap: 40px;
   padding: 10px;
-  background-color: #0A1828;
+  background-color: #424242;
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -327,7 +328,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 /* Hover effect for volunteer items */
 .volunteer-section .experience-item:hover {
   transform: scale(1.05);
-  background-color: #0a182879;
+  background-color: #424242;
 }
 
 .experience-logo {
@@ -338,31 +339,31 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .experience-details h3 {
   font-size: 1.5rem;
-  color: #ebebeb;
+  color: #fafafa;
   margin: 0;
 }
 
 .experience-date {
   font-size: 1rem;
-  color: #aaaaaa;
+  color: #686868;
 }
 
 .experience-description {
   font-size: 1.1rem;
-  color: #ebebeb;
+  color: #fafafa;
   line-height: 1.6;
   margin-top: 5px;
 }
 .projects-section {
   
-  background-color: #0A1828; /* Dark background to differentiate */
-  color: #ebebeb;
+  background-color: #424242; /* Dark background to differentiate */
+  color: #fafafa;
   padding: 60px 80px;
 }
 
 .projects-section h2 {
   font-size: 3rem;
-  color: #BFA181;
+  color: #fafafa;
   text-align: right;
   margin-bottom: 50px;
   margin-right: 4%;
@@ -416,7 +417,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .card-face.back {
   transform: rotateY(180deg);
-  background-color: #0A1828;
+  background-color: #424242;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -425,14 +426,14 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 }
 
 .card-content {
-  color: #ebebeb;
+  color: #fafafa;
 }
 
 .card-title {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #BFA181;
+  color: #fafafa;
 }
 
 .card-description {
@@ -442,11 +443,11 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .card-tech {
   font-size: 1rem;
-  color: #BFA181;
+  color: #fafafa;
 }
 /* Footer Section */
 .footer-section {
-  background-color: #BFA181;
+  background-color: #424242;
   color: #333;
   padding: 40px 0;
   display: flex;
@@ -481,7 +482,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   color: #333;
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  background: #BFA181;
+  background: #292929;
   margin: 5px;
   transition: 0.3s;
   justify-content: center;
@@ -513,28 +514,28 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 }
 
 #linkedin svg {
-  fill: #ebebeb;
+  fill: #fafafa;
 }
 
 #github svg {
-  fill: #ebebeb;
+  fill: #fafafa;
 }
 
 .footer-text {
   font-size: 1rem;
-  color: #ebebeb;
+  color: #fafafa;
   margin: auto; /* Center the text */
 }
 .blogs-section {
-  background-color: #0A1828;
-  color: #ebebeb;
+  background-color: #424242;
+  color: #fafafa;
   min-height: 100vh;
   padding: 50px 80px;
 }
 
 .blogs-section h2 {
   font-size: 3rem;
-  color: #BFA181;
+  color: #fafafa;
   margin-bottom: 50px;
   margin-right: 50px;
   text-align: right;
@@ -551,7 +552,7 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
   align-items: flex-start;
   gap: 20px;
   padding: 15px;
-  background-color: #0A1828;
+  background-color: #424242;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
@@ -570,12 +571,12 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .blog-content h3 {
   font-size: 1.5rem;
-  color: #ebebeb;
+  color: #fafafa;
 }
 
 .blog-content h3 a {
   text-decoration: none;
-  color: #BFA181;
+  color: #fafafa;
 }
 
 .blog-content h3 a:hover {
@@ -586,5 +587,5 @@ nav, .content, .about-section, .experience-section, .experience-details h3, .exp
 
 .blog-content p {
   font-size: 1.1rem;
-  color: #ebebeb;
+  color: #fafafa;
 }
